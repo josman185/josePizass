@@ -12,6 +12,8 @@
 		043073891D32C149004DBA42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 043073871D32C149004DBA42 /* Main.storyboard */; };
 		0430738B1D32C149004DBA42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0430738A1D32C149004DBA42 /* Assets.xcassets */; };
 		0430738E1D32C149004DBA42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0430738C1D32C149004DBA42 /* LaunchScreen.storyboard */; };
+		043073A21D334C75004DBA42 /* TipoQueso.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043073A11D334C75004DBA42 /* TipoQueso.swift */; };
+		043073A41D334EDE004DBA42 /* Ingredientes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043073A31D334EDE004DBA42 /* Ingredientes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		0430738A1D32C149004DBA42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0430738D1D32C149004DBA42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0430738F1D32C149004DBA42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		043073A11D334C75004DBA42 /* TipoQueso.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipoQueso.swift; sourceTree = "<group>"; };
+		043073A31D334EDE004DBA42 /* Ingredientes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ingredientes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				0430738A1D32C149004DBA42 /* Assets.xcassets */,
 				0430738C1D32C149004DBA42 /* LaunchScreen.storyboard */,
 				0430738F1D32C149004DBA42 /* Info.plist */,
+				043073A11D334C75004DBA42 /* TipoQueso.swift */,
+				043073A31D334EDE004DBA42 /* Ingredientes.swift */,
 			);
 			path = JosePizza;
 			sourceTree = "<group>";
@@ -137,6 +143,8 @@
 			files = (
 				043073861D32C149004DBA42 /* ViewController.swift in Sources */,
 				043073841D32C149004DBA42 /* AppDelegate.swift in Sources */,
+				043073A41D334EDE004DBA42 /* Ingredientes.swift in Sources */,
+				043073A21D334C75004DBA42 /* TipoQueso.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
