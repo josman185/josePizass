@@ -10,7 +10,7 @@ import UIKit
 
 class TipoQueso: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate{
     
-    var pickerTipoQueso = ["Manchego", "Americano", "Parmesano"]
+    var pickerTipoQueso = ["mozarela", "cheddar", "parmesano", "sin queso"]
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
