@@ -10,7 +10,11 @@ import UIKit
 
 class TipoQueso: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate{
     
-    var pickerTipoQueso = ["mozarela", "cheddar", "parmesano", "sin queso"]
+    var pickerTipoQueso = ["Sin queso", "Mozarela", "Cheddar", "Parmesano"]
+    
+    var tamanoPizza : String!
+    var tipoMasa : String!
+    var tipoQueso : String = "Sin queso"
     
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int {
         return 1
@@ -24,5 +28,20 @@ class TipoQueso: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate{
         return pickerTipoQueso[row]
     }
     
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int)
+    {
+    tipoQueso=self.pickerTipoQueso[row]
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "segueToIngredientes"
+        {
+            if let destinationVCIngredientes = segue.destinationViewController as? Ingredientes {
+                destinationVCIngredientes.tamanoDePizza = tamanoPizza
+                destinationVCIngredientes.tipoDeMasa = tipoMasa
+                destinationVCIngredientes.tipoDeQueso = tipoQueso
+            }
+        }
+    }
 
 }
